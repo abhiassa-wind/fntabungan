@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fn Tabungan | Landing Page</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="./src/input.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="poppins-thin">
+    <header>
+        <nav class="flex justify-between items-center p-5 h-16">
+            <div class="wrapper flex justify-start items-center">
+               <h1 class="font-semibold white text-md">Fn Tabungan</h1>
+            </div>
+            <div class="wrapper flex justify-end items-center">
+                <a href="./page/first.html" class="font-normal white text-sm hidden">Doks</a>
+            </div>
+        </nav>
+    </header>
+    <section class="h-full">
+        <div class="wrapper mt-10 p-5">
+            <div class="wrapper flex flex-col justify-center items-center">
+                <h1 class="font-medium text-2xl white">Selamat Datang di</h1>
+                <h1 class="font-semibold text-5xl white">Fn Tabungan</h1>
+                <p1 class="font-normal text-md white mt-2">Aplikasi tabungan berbasis web</p1>
+                <p1 class="font-normal text-md white">yang simple dan mudah digunakan</p1>
+            </div>
+           <div class="wrapper flex justify-center relative">
+            <div class="wrapper flex flex-col justify-center gap-3 items-center fixed bottom-20">
+                <button onclick="start()" class="hidden p-3 blue text-black rounded-full shadow-md font-normal w-72">Mulai</button>
+                <button id="loginButton" class="p-3 blue text-black rounded-full shadow-md font-medium w-72">Login Google</button>
+            </div>
+           </div>
+            <div class="wrapper flex justify-center p-5">
+                <div id="formName" class="wrapper w-screnn white-bg h-80 fixed bottom-0 z-10 rounded-xl p-8 hidden">
+                    <div class="wrapper flex justify-center">
+                        <h1 class="font-medium">Siapkan Profile</h1>
+                    </div>
+                    <form class="flex flex-col mt-5">
+                        <label for="Name" class="font-normal black-text">Masukan nama:</label>
+                        <input type="text" id="nameUser" name="Nama" placeholder="Masukan nama" class="p-2 rounded-md mt-1 font-normal">
+                        <label for="Foto" class="font-normal black-text mt-2 hidden">Masukan foto (opsional):</label>
+                        <input type="file" id="fotoUser" name="Nama" placeholder="Masukan nama" class="hidden p-2 rounded-md mt-1 font-normal w-20">
+                    </form>
+                    <div class="wrapper flex justify-center mt-10">
+                        <button onclick="next()" class="p-2 bg-blue-600 text-white rounded-full shadow-md font-normal w-72">Lanjut</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./src/main.js"></script>
+    <script type="module" src="./db/db.js"></script>
+</body>
+</html>

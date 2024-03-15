@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fn Tabungan | Kotak Masuk</title>
+    <link rel="stylesheet" href="../src/output.css">
+    <link rel="stylesheet" href="../src/input.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="poppins-thin">
+    <header>
+        <nav class="flex justify-between items-center p-5 h-16">
+            <div class="wrapper flex justify-start items-center">
+               <button onclick="toggleButton()" class="white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                  </svg>
+               </button>
+            </div>
+            <div class="wrapper justify-end items-center hidden">
+                <a href="./profile.html"><img id="userProfileImage" class="h-9 w-9 rounded-full"></a>
+            </div>
+        </nav>
+        <div class="wrapper hidden" id="toggleMenu">
+            <div class="wrapper w-screen black p-5 absolute top-0 h-screen animate__animated animate__fadeInLeft">
+                <div class="wrapper flex justify-between items-center h-16">
+                    <div class="wrapper flex justify-start items-center">
+                        <h1 class="font-medium white text-lg">FN Tabungan</h1>
+                    </div>
+                    <div class="wrapper">
+                        <button onclick="closeMenu()" class="white"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                          </svg></button>
+                    </div>
+                </div>
+                <div class="wrapper mt-10 flex flex-col gap-10">
+                    <a href="./first.html" class="font-medium white">Beranda</a>
+                    <a href="./profile.html" class="font-medium white">Profile Saya</a>
+                    <a href="https://wa.me/6288801890805" class="font-medium white">Layanan</a>
+                    <a href="https://wa.me/6288801890805" class="font-medium white">Kontak Kami</a>
+                    <a href="mailto:abhiassabisnis@gmail.com" class="font-medium white">FAQ</a>
+                    <a href="" class="font-medium white mt-5 hidden" id="loginLink">Login</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="h-full">
+        <div class="wrapper p-5 flex justify-center items-center">
+          <h1 class="white font-medium">Tidak ada email</h1>
+        </div>
+    </section>
+    <script src="../src/main.js"></script>
+    <script type="module" src="../db/db.js"></script>
+    <script src="../storage/storage.js"></script>
+</body>
+</html>
